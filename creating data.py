@@ -10,6 +10,7 @@ import numpy as np
 from scipy.spatial.distance import euclidean
 from scipy.spatial import distance_matrix
 import matplotlib.pyplot as plt
+import scipy.io
 
 import pandas as pd
 vptxt =np.loadtxt(r'D:\thesis\data_hendrick\2D_gound_models\vp.txt')
@@ -19,15 +20,14 @@ xx, yy = np.meshgrid(x, y, sparse=True)
 distance = np.sqrt(yy**2 + xx**2)
 time = np.divide(distance,vptxt)#add the velocity file instead of vp txt
 
-data= pd.DataFrame()
-u=pd.DataFrame()
-t=pd.DataFrame()
-data['x']= x
-data['y']= y
-data.
-u= distance
-t= time
+
+Data= {}
+Data['x']=x
+Data['y']=y
+Data['t']=time
+Data['velocity']= vptxt
+np.save('seismic_data.npy', Data, allow_pickle=True) 
+scipy.io.savemat('seismic_data.mat', Data)
+#Data2 = mat = scipy.io.loadmat('seismic_data.mat')
 
 
-plt.imshow(time)
-sns.heatmap(time)
