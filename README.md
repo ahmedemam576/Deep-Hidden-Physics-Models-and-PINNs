@@ -1,7 +1,10 @@
 # Physics-Informed Neural Networks (PINN) for 2D Acoustic Wave Simulation
 
 ## Overview
-This code implements a Physics-Informed Neural Network (PINN) approach to simulate the propagation of sound in 2D space. It consists of two neural networks: the first network predicts the pressure at each point in space and time, while the second network performs the backward inference step to calculate the density of the medium. This PINN approach is based on the 2D acoustic wave equation. The advantages of this method include the mitigation of handcrafting boundary conditions, instant inference, and the avoidance of hand-crafted grid cells.
+We propose an approach to predict the solution for the 2D Acoustic Wave Equation and the full waveform inversion using the Physics Informed Neural Networks (PINNs) and The Hidden Physics Models (HPM).
+In this master thesis, computational experiments are designed to test the ability of PINNs and HPM to handle different training datasets and investigate the approach's performance in reconstructing a heterogeneous velocity model. The process of synthetic data generation is out of the scope of this research. Nevertheless, we discuss it at a high level.
+PINNs and HPM meshless nature allow smooth implementation for the wave equation's solver and different boundary conditions, such as absorbing boundary conditions, which forms a computational challenge for common classical wave equation solvers. Moreover, the proposed algorithm can easily encode prior knowledge of the geological structure.
+It is found that the proposed approach shows acceptable results for forward modeling and full-waveform inversions, even though the classical methods, such as finite difference and spectral element, are more accurate. Moreover, our results show that HPM and PINNs can detect the main structures in the velocity models in complex geological structures. Using PINNs for geophysical inversion shows promising potentials for seismic inversions and joint inversions using different geophysical datasets, such as magnetic and gravitational datasets, because of the PINN's robustness and ability to scale.
 
 ## Dependencies
 Make sure you have the following Python libraries installed before running the code:
