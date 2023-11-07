@@ -41,7 +41,7 @@ Please make sure to set up the required data and paths as per your project requi
 - You can customize the PINN architecture, dataset sizes, and training settings to suit your specific problem.
 
 ![Approach Flowchart](flowchart.png)
-![Result 2](path_to_image2.png)
-![Result 3](path_to_image3.png)
+![Pressure prediction (Forward Step)](pressure_prediction.png)
+![Density Inference (Detect Oil, Gas,and Water)](density_inference.png)
 
 
