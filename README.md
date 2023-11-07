@@ -1,5 +1,5 @@
 # Phsics-informed Neural Network to simulate sound wave propagation in the ground and to infer the density (geophysical properties of the propagation medium)
-# detect Oil and Gas using PINNS
+### Detect the presence of oil and gas using PINNS
 ## Overview
 We propose an approach to predict the solution for the 2D Acoustic Wave Equation and the full waveform inversion using the Physics Informed Neural Networks (PINNs) and The Hidden Physics Models (HPM).
 In this master thesis, computational experiments are designed to test the ability of PINNs and HPM to handle different training datasets and investigate the approach's performance in reconstructing a heterogeneous velocity model. The process of synthetic data generation is out of the scope of this research. Nevertheless, we discuss it at a high level.
