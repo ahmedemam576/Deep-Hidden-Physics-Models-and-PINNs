@@ -1,5 +1,5 @@
-# Physics-Informed Neural Networks (PINN) for 2D Acoustic Wave Simulation
-
+# Phsics-informed Neural Network to simulate sound wave propagation in the ground and to infer the density (geophysical properties of the propagation medium)
+# detect Oil and Gas using PINNS
 ## Overview
 We propose an approach to predict the solution for the 2D Acoustic Wave Equation and the full waveform inversion using the Physics Informed Neural Networks (PINNs) and The Hidden Physics Models (HPM).
 In this master thesis, computational experiments are designed to test the ability of PINNs and HPM to handle different training datasets and investigate the approach's performance in reconstructing a heterogeneous velocity model. The process of synthetic data generation is out of the scope of this research. Nevertheless, we discuss it at a high level.
@@ -39,9 +39,11 @@ Please make sure to set up the required data and paths as per your project requi
 ## Additional Notes
 - Make sure you have the necessary data files, such as `vp.txt`, in the specified paths.
 - You can customize the PINN architecture, dataset sizes, and training settings to suit your specific problem.
-
+## Approach's Flowchart
 ![Approach Flowchart](flowchart.png)
+## Pressure prediction (Forward Step)
 ![Pressure prediction (Forward Step)](pressure_prediction.png)
-![Density Inference (Detect Oil, Gas,and Water)](density_inference.png)
+## Density Inference (Detect Oil, Gas, and Water)
+![Density Inference (Detect Oil, Gas, and Water)](density_inference.png)
 
 
