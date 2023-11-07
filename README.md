@@ -40,7 +40,7 @@ Please make sure to set up the required data and paths as per your project requi
 - Make sure you have the necessary data files, such as `vp.txt`, in the specified paths.
 - You can customize the PINN architecture, dataset sizes, and training settings to suit your specific problem.
 
-![Result 1](path_to_image1.png)
+![Approach Flowchart](flowchart.png)
 ![Result 2](path_to_image2.png)
 ![Result 3](path_to_image3.png)
 
