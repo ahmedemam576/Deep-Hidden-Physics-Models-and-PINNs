@@ -1,4 +1,4 @@
-# Phsics-informed Neural Network to simulate sound wave propagation in the ground and to infer the density (geophysical properties of the propagation medium)
+# Physics-informed Neural Network (PINNS) to simulate sound wave propagation in the ground and to infer the density (geophysical properties of the propagation medium)
 ### Detect the presence of oil and gas using PINNS
 ## Overview
 We propose an approach to predict the solution for the 2D Acoustic Wave Equation and the full waveform inversion using the Physics Informed Neural Networks (PINNs) and The Hidden Physics Models (HPM).
